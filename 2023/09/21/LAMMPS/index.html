@@ -27,7 +27,7 @@
 <meta property="og:description" content="一些学习LAMMPS的记录">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-20T16:17:26.000Z">
-<meta property="article:modified_time" content="2023-09-22T05:28:35.653Z">
+<meta property="article:modified_time" content="2023-09-22T07:16:19.523Z">
 <meta property="article:author" content="张睿智">
 <meta property="article:tag" content="-学习日志">
 <meta name="twitter:card" content="summary">
@@ -113,7 +113,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lammps%E5%8F%8AOvito%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E5%8F%8A%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">Lammps及Ovito学习记录及问题处理</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Lammps%E5%8F%8AOvito%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%E5%8F%8A%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">Lammps及Ovito学习记录及问题处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux%E7%AF%87"><span class="nav-number">1.1.</span> <span class="nav-text">Linux篇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%9B%AE%E5%BD%95%E5%88%87%E6%8D%A2%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.目录切换命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%96%87%E4%BB%B6%E5%B1%95%E7%A4%BA%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.文件展示命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BA%E5%92%8C%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.3.</span> <span class="nav-text">3.创建和查看文件的命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%88%A0%E9%99%A4%E5%91%BD%E4%BB%A4%E5%92%8C%E9%87%8D%E5%91%BD%E5%90%8D%E6%88%96%E7%A7%BB%E5%8A%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.4.</span> <span class="nav-text">4.删除命令和重命名或移动命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Vi%E7%BC%96%E8%BE%91%E5%99%A8%EF%BC%88linux%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A0%87%E5%87%86%E7%BC%96%E8%BE%91%E5%99%A8%EF%BC%89"><span class="nav-number">1.1.5.</span> <span class="nav-text">5.Vi编辑器（linux系统的标准编辑器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E7%BB%88%E7%AB%AF%E7%AA%97%E5%8F%A3%E4%BD%BF%E7%94%A8vi"><span class="nav-number">1.1.6.</span> <span class="nav-text">6.终端窗口使用vi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E5%B8%B8%E7%94%A8%E7%9A%84vi%E7%BC%96%E8%BE%91%E5%99%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.7.</span> <span class="nav-text">7.常用的vi编辑器命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E4%B8%8B%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.7.1.</span> <span class="nav-text">在命令模式下使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F%E4%B8%8B%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.7.2.</span> <span class="nav-text">在插入模式下使用</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Nano%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">1.1.8.</span> <span class="nav-text">8.Nano编辑器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%88%E7%AB%AF%E7%AA%97%E5%8F%A3%E4%BD%BF%E7%94%A8nano"><span class="nav-number">1.1.8.1.</span> <span class="nav-text">终端窗口使用nano</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nano%E7%BC%96%E8%BE%91%E5%99%A8%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">1.1.8.2.</span> <span class="nav-text">nano编辑器常用快捷键</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-%E5%BF%AB%E9%80%9F%E6%9F%A5%E6%89%BE"><span class="nav-number">1.1.9.</span> <span class="nav-text">9.快速查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-%E8%A7%A3%E5%8E%8B"><span class="nav-number">1.1.10.</span> <span class="nav-text">10.解压</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -210,7 +210,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-09-22 13:28:35" itemprop="dateModified" datetime="2023-09-22T13:28:35+08:00">2023-09-22</time>
+      <time title="修改时间：2023-09-22 15:16:19" itemprop="dateModified" datetime="2023-09-22T15:16:19+08:00">2023-09-22</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -235,54 +235,42 @@
     <div class="post-body" itemprop="articleBody"><h1 id="Lammps及Ovito学习记录及问题处理"><a href="#Lammps及Ovito学习记录及问题处理" class="headerlink" title="Lammps及Ovito学习记录及问题处理"></a>Lammps及Ovito学习记录及问题处理</h1><p>&emsp;&emsp;本人目前就读于北京航空航天大学机械工程及自动化学院的机器人工程专业出于内卷要求及在和蔼可亲以及可爱的燕鑫老师的指导下，我选择在大三从事分子动力学的研究。 </p>
 <p>&emsp;&emsp;由于分子动力学在对实验的技术要求以及设备要求极高，因此我们多采用数值仿真的形式去对分子动力学进行研究，以下内容主要记录我的仿真软件学习记录和问题处理。  </p>
 <p>PS：本人刚刚入门，如有表述不准或大错特错，欢迎指正，我一定虚心求教！</p>
-<p>##Linux篇<br>###1.目录切换命令</p>
-<p>pwd 	——  	#显示当前所在目录   </p>
+<h2 id="Linux篇"><a href="#Linux篇" class="headerlink" title="Linux篇"></a>Linux篇</h2><h3 id="1-目录切换命令"><a href="#1-目录切换命令" class="headerlink" title="1.目录切换命令"></a>1.目录切换命令</h3><p>pwd 	——  	#显示当前所在目录   </p>
 <p>cd&emsp; ~	——	#切换到主目录  </p>
 <p>cd&emsp; dir	——	#切换到指定目录</p>
 <p>cd&emsp;..	——#切换到上一级目录</p>
-<p>###2.文件展示命令</p>
-<p>ls	——	#展示当前目录下所有的文件和文件夹</p>
+<h3 id="2-文件展示命令"><a href="#2-文件展示命令" class="headerlink" title="2.文件展示命令"></a>2.文件展示命令</h3><p>ls	——	#展示当前目录下所有的文件和文件夹</p>
 <p>ls -a——	#展示当前目录下所有文件和文件夹（含隐藏文件）</p>
-<p>###3.创建和查看文件的命令</p>
-<p>touch file	——	#创建文件file</p>
+<h3 id="3-创建和查看文件的命令"><a href="#3-创建和查看文件的命令" class="headerlink" title="3.创建和查看文件的命令"></a>3.创建和查看文件的命令</h3><p>touch file	——	#创建文件file</p>
 <p>mkdir dir	——	#创建目录dir</p>
 <p>cat file	——	#查看文件file内容</p>
 <p>more file	——	#查看文件file内容</p>
 <p>head file	——	#查看文件file前十行</p>
 <p>tail file 	——	#查看文件file后十行</p>
-<p>###4.删除命令和重命名或移动命令</p>
-<p>rm file	——	#删除文件file</p>
+<h3 id="4-删除命令和重命名或移动命令"><a href="#4-删除命令和重命名或移动命令" class="headerlink" title="4.删除命令和重命名或移动命令"></a>4.删除命令和重命名或移动命令</h3><p>rm file	——	#删除文件file</p>
 <p>rm -r dir	——	#删除目录dir</p>
 <p>mv file1 file2—— #若file2不存在，则将file1改名为file2；<br>                  #若file2存在，则将file1覆盖掉file2，并更名为file2</p>
 <p>mv file dir	—— #将文件file移动到dir目录中</p>
-<p>###5.Vi编辑器（linux系统的标准编辑器）</p>
-<p>分为三个模式，在一个模式下只能使用该模式具有的功能</p>
+<h3 id="5-Vi编辑器（linux系统的标准编辑器）"><a href="#5-Vi编辑器（linux系统的标准编辑器）" class="headerlink" title="5.Vi编辑器（linux系统的标准编辑器）"></a>5.Vi编辑器（linux系统的标准编辑器）</h3><p>分为三个模式，在一个模式下只能使用该模式具有的功能</p>
 <p>1）	插入模式（Insert mode）：此模式下可以输入字符。按ESC将回到命令模式</p>
 <p>2）	底行模式（Last line mode）：可以保存文件、退出vi、设置vi、查找等功能</p>
 <p>3）	命令模式（Command mode）：可以移动光标、删除字符等</p>
-<p>###6.终端窗口使用vi</p>
-<p>vi file 		——#使用vi编辑文件file<br>                 若文件不存在，则创建文件file</p>
-<p>###7.常用的vi编辑器命令</p>
-<p>####在命令模式下使用</p>
-<p>：w  ——			#保存文件</p>
+<h3 id="6-终端窗口使用vi"><a href="#6-终端窗口使用vi" class="headerlink" title="6.终端窗口使用vi"></a>6.终端窗口使用vi</h3><p>vi file 		——#使用vi编辑文件file<br>                 若文件不存在，则创建文件file</p>
+<h3 id="7-常用的vi编辑器命令"><a href="#7-常用的vi编辑器命令" class="headerlink" title="7.常用的vi编辑器命令"></a>7.常用的vi编辑器命令</h3><h4 id="在命令模式下使用"><a href="#在命令模式下使用" class="headerlink" title="在命令模式下使用"></a>在命令模式下使用</h4><p>：w  ——			#保存文件</p>
 <p>：q		——		#退出编辑器，如果文件已修改请使用下面的命令</p>
 <p>：q！	——		#退出编辑器，且不保存</p>
 <p>：wq		——	#推出编辑器，且保存文件</p>
 <p>a		——		#在当前光标位置的右边添加文本</p>
 <p>i		——		#在当前光标位置的左边添加文本</p>
 <p>o		——		#在当前行的下面新建一行</p>
-<p>####在插入模式下使用</p>
-<p>esc		——		#切换到命令模式</p>
-<p>###8.Nano编辑器</p>
-<p>####终端窗口使用nano</p>
-<p>nano file	——	#使用nano编辑文件file，若文件不存在则创建文件file</p>
-<p>####nano编辑器常用快捷键</p>
-<p>ctrl+o	——		#保存当前文档（ctrl+s也可以）</p>
+<h4 id="在插入模式下使用"><a href="#在插入模式下使用" class="headerlink" title="在插入模式下使用"></a>在插入模式下使用</h4><p>esc		——		#切换到命令模式</p>
+<h3 id="8-Nano编辑器"><a href="#8-Nano编辑器" class="headerlink" title="8.Nano编辑器"></a>8.Nano编辑器</h3><h4 id="终端窗口使用nano"><a href="#终端窗口使用nano" class="headerlink" title="终端窗口使用nano"></a>终端窗口使用nano</h4><p>nano file	——	#使用nano编辑文件file，若文件不存在则创建文件file</p>
+<h4 id="nano编辑器常用快捷键"><a href="#nano编辑器常用快捷键" class="headerlink" title="nano编辑器常用快捷键"></a>nano编辑器常用快捷键</h4><p>ctrl+o	——		#保存当前文档（ctrl+s也可以）</p>
 <p>esc+u	——		#撤销上次操作</p>
 <p>ctrl+u	——		#粘贴</p>
 <p>ctrl+g	——		#打开nano帮助文档</p>
-<p>###9.快速查找	<br>grep      ——    #查找固定形式的行</p>
-<p>###10.解压	<br>tar -zxvf 	file		——	#压缩或解压缩</p>
+<h3 id="9-快速查找"><a href="#9-快速查找" class="headerlink" title="9.快速查找"></a>9.快速查找</h3><p>grep      ——    #查找固定形式的行</p>
+<h3 id="10-解压"><a href="#10-解压" class="headerlink" title="10.解压"></a>10.解压</h3><p>tar -zxvf 	file		——	#压缩或解压缩</p>
 
     </div>
 
