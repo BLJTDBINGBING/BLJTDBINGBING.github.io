@@ -19,16 +19,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ruizhiblog.cn","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Lammps及Ovito学习记录及问题处理&amp;emsp;&amp;emsp;本人目前就读于北京航空航天大学机械工程及自动化学院的机器人工程专业出于内卷要求及在和蔼可亲以及可爱的燕鑫老师的指导下，我选择在大三从事分子动力学的研究。  &amp;emsp;&amp;emsp;由于分子动力学在对实验的技术要求以及设备要求极高，因此我们多采用数值仿真的形式去对分子动力学进行研究，以下内容主要记录我的仿真软件学习记录和问题处理。">
+    <meta name="description" content="一些学习LAMMPS的记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LAMMPS">
 <meta property="og:url" content="http://ruizhiblog.cn/2023/09/21/LAMMPS/index.html">
 <meta property="og:site_name" content="冰の博客">
-<meta property="og:description" content="Lammps及Ovito学习记录及问题处理&amp;emsp;&amp;emsp;本人目前就读于北京航空航天大学机械工程及自动化学院的机器人工程专业出于内卷要求及在和蔼可亲以及可爱的燕鑫老师的指导下，我选择在大三从事分子动力学的研究。  &amp;emsp;&amp;emsp;由于分子动力学在对实验的技术要求以及设备要求极高，因此我们多采用数值仿真的形式去对分子动力学进行研究，以下内容主要记录我的仿真软件学习记录和问题处理。">
+<meta property="og:description" content="一些学习LAMMPS的记录">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-20T16:17:26.000Z">
-<meta property="article:modified_time" content="2023-09-21T15:26:25.100Z">
+<meta property="article:modified_time" content="2023-09-22T05:01:50.956Z">
 <meta property="article:author" content="张睿智">
+<meta property="article:tag" content="学习日志">
 <meta name="twitter:card" content="summary">
 
 
@@ -87,7 +88,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">1</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">1</span></a></li>
   </ul>
 </nav>
 
@@ -130,6 +131,15 @@
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -177,7 +187,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="LAMMPS | 冰の博客">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="一些学习LAMMPS的记录">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -191,51 +201,67 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-09-21 00:17:26 / 修改时间：23:26:25" itemprop="dateCreated datePublished" datetime="2023-09-21T00:17:26+08:00">2023-09-21</time>
+      <time title="创建时间：2023-09-21 00:17:26" itemprop="dateCreated datePublished" datetime="2023-09-21T00:17:26+08:00">2023-09-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-09-22 13:01:50" itemprop="dateModified" datetime="2023-09-22T13:01:50+08:00">2023-09-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/LAMMPS/" itemprop="url" rel="index"><span itemprop="name">LAMMPS</span></a>
+        </span>
     </span>
 
   
 </div>
 
+            <div class="post-description">一些学习LAMMPS的记录</div>
         </div>
       </header>
 
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="Lammps及Ovito学习记录及问题处理"><a href="#Lammps及Ovito学习记录及问题处理" class="headerlink" title="Lammps及Ovito学习记录及问题处理"></a>Lammps及Ovito学习记录及问题处理</h1><p>&emsp;&emsp;本人目前就读于北京航空航天大学机械工程及自动化学院的机器人工程专业出于内卷要求及在和蔼可亲以及可爱的燕鑫老师的指导下，我选择在大三从事分子动力学<br>的研究。 </p>
+    <div class="post-body" itemprop="articleBody"><h1 id="Lammps及Ovito学习记录及问题处理"><a href="#Lammps及Ovito学习记录及问题处理" class="headerlink" title="Lammps及Ovito学习记录及问题处理"></a>Lammps及Ovito学习记录及问题处理</h1><p>&emsp;&emsp;本人目前就读于北京航空航天大学机械工程及自动化学院的机器人工程专业出于内卷要求及在和蔼可亲以及可爱的燕鑫老师的指导下，我选择在大三从事分子动力学的研究。 </p>
 <p>&emsp;&emsp;由于分子动力学在对实验的技术要求以及设备要求极高，因此我们多采用数值仿真的形式去对分子动力学进行研究，以下内容主要记录我的仿真软件学习记录和问题处理。  </p>
 <p>PS：本人刚刚入门，如有表述不准或大错特错，欢迎指正，我一定虚心求教！</p>
-<p>##Linux篇<br>###1.	目录切换命令</p>
+<p>##Linux篇<br>###1.目录切换命令</p>
 <p>pwd 	——  	#显示当前所在目录   </p>
 <p>cd&emsp; ~	——	#切换到主目录  </p>
 <p>cd&emsp; dir	——	#切换到指定目录</p>
 <p>cd&emsp;..	——#切换到上一级目录</p>
-<p>###2.	文件展示命令</p>
+<p>###2.文件展示命令</p>
 <p>ls	——	#展示当前目录下所有的文件和文件夹</p>
 <p>ls -a——	#展示当前目录下所有文件和文件夹（含隐藏文件）</p>
-<p>###3.	创建和查看文件的命令</p>
+<p>###3.创建和查看文件的命令</p>
 <p>touch file	——	#创建文件file</p>
 <p>mkdir dir	——	#创建目录dir</p>
 <p>cat file	——	#查看文件file内容</p>
 <p>more file	——	#查看文件file内容</p>
 <p>head file	——	#查看文件file前十行</p>
 <p>tail file 	——	#查看文件file后十行</p>
-<p>###4.	删除命令和重命名或移动命令</p>
+<p>###4.删除命令和重命名或移动命令</p>
 <p>rm file	——	#删除文件file</p>
 <p>rm -r dir	——	#删除目录dir</p>
 <p>mv file1 file2—— #若file2不存在，则将file1改名为file2；<br>                  #若file2存在，则将file1覆盖掉file2，并更名为file2</p>
 <p>mv file dir	—— #将文件file移动到dir目录中</p>
-<p>###5.	Vi编辑器（linux系统的标准编辑器）</p>
+<p>###5.Vi编辑器（linux系统的标准编辑器）</p>
 <p>分为三个模式，在一个模式下只能使用该模式具有的功能</p>
 <p>1）	插入模式（Insert mode）：此模式下可以输入字符。按ESC将回到命令模式</p>
 <p>2）	底行模式（Last line mode）：可以保存文件、退出vi、设置vi、查找等功能</p>
 <p>3）	命令模式（Command mode）：可以移动光标、删除字符等</p>
-<p>###6.	终端窗口使用vi</p>
+<p>###6.终端窗口使用vi</p>
 <p>vi file 		——#使用vi编辑文件file<br>                 若文件不存在，则创建文件file</p>
-<p>###7.	常用的vi编辑器命令</p>
+<p>###7.常用的vi编辑器命令</p>
 <p>####在命令模式下使用</p>
 <p>：w  ——			#保存文件</p>
 <p>：q		——		#退出编辑器，如果文件已修改请使用下面的命令</p>
@@ -246,7 +272,7 @@
 <p>o		——		#在当前行的下面新建一行</p>
 <p>####在插入模式下使用</p>
 <p>esc		——		#切换到命令模式</p>
-<p>###8.	Nano编辑器</p>
+<p>###8.Nano编辑器</p>
 <p>####终端窗口使用nano</p>
 <p>nano file	——	#使用nano编辑文件file，若文件不存在则创建文件file</p>
 <p>####nano编辑器常用快捷键</p>
@@ -267,6 +293,9 @@
 </div>
 </div>
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/" rel="tag"># 学习日志</a>
+          </div>
 
         
 
