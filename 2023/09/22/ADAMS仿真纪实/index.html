@@ -26,11 +26,13 @@
 <meta property="og:site_name" content="冰の博客">
 <meta property="og:description" content="一些学习ADAMS VIEW的记录">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://ruizhiblog.cn/.cn//ADAMS%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png">
 <meta property="article:published_time" content="2023-09-22T10:07:02.000Z">
-<meta property="article:modified_time" content="2023-09-22T12:01:55.866Z">
+<meta property="article:modified_time" content="2023-09-26T12:50:49.501Z">
 <meta property="article:author" content="张睿智">
 <meta property="article:tag" content="学习日志">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ruizhiblog.cn/.cn//ADAMS%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png">
 
 
 <link rel="canonical" href="http://ruizhiblog.cn/2023/09/22/ADAMS%E4%BB%BF%E7%9C%9F%E7%BA%AA%E5%AE%9E/">
@@ -202,9 +204,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-09-22 18:07:02 / 修改时间：20:01:55" itemprop="dateCreated datePublished" datetime="2023-09-22T18:07:02+08:00">2023-09-22</time>
+      <time title="创建时间：2023-09-22 18:07:02" itemprop="dateCreated datePublished" datetime="2023-09-22T18:07:02+08:00">2023-09-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-09-26 20:50:49" itemprop="dateModified" datetime="2023-09-26T20:50:49+08:00">2023-09-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -226,8 +234,9 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="一点小小的ADAMS吐槽"><a href="#一点小小的ADAMS吐槽" class="headerlink" title="一点小小的ADAMS吐槽"></a>一点小小的ADAMS吐槽</h1><p>&emsp;&emsp;作为一个机械专业的本科生，ADAMS应该是学习机械原理和机械设计分析机构运动的绕不开的一个软件。本人在大二做机械原理及机械设计大作业时侥幸没有分到这个任务，原来以为躲过了一劫，没想到最终还是遇到了。在此先声明，我确实任务这个软件的任务（即做运动学的仿真）确实完成地很好，但是不得不吐槽一下，作为一个运动仿真的软件，你没有很强大的建模能力我是可以理解的，但是你还没有和其他建模软件相互友好的沟通能力，我只能评价为抽象。</p>
-<h1 id="从SOLIDWORKS导入文件到ADAMS"><a href="#从SOLIDWORKS导入文件到ADAMS" class="headerlink" title="从SOLIDWORKS导入文件到ADAMS"></a>从SOLIDWORKS导入文件到ADAMS</h1><p>&emsp;<strong>从Solidworks导入文件到Adams有两种方式，两种方式各有利弊，在应用上可以互相参考</strong><br>&emsp;&emsp;方式一，将Solidworks的建模文件另存为Parasolid(*.x_t; *.x_b）文件。打开Adams选择新建模型，记住Adams仿真的模型名称，之后选择文件——导入；选择文件类型为Parasolid文件；双击读取文件，选择生成的Parasolid文件，之后输入模型名称为Adams仿真的模型名称；就可以导入一个不添加任何约束的模型。<br>&emsp;&emsp;方式二，在Solidworks中运动算例中，将分析方式选择为motion，如果没有Motion分析则需要在菜单栏中选择SOLIDWORKS插件，选择SOLIDWORKS Motion，之后就会出现Motion分析选项，拖动装配体关键帧到任一位置，点击计算，之后右键运动算例中的装配体文件，选择输出到ADAMS，即可生成一个ADAMS模型（ *.adm）文件，之后在ADAMS中直接打开这个文件即可。此时ADAMS中将Solidworks中的配合转换为约束，但是转换效果一言难尽。<br>&emsp;&emsp;这两种方式都可以将Solidworks中的文件导入到ADAMS中，方式一如果你有足够的机械原理知识可以自己约束物体，要注意将模型中固定不动的部件和大地固连（建立固定副），这样的约束比较合理，符合实际。方式二比较偷懒，但是在没有机械原理基础时可以选择采用，只是会出现约束查找困难的问题，不利于后续操作。<br>&emsp; <strong>可能出现的一些问题</strong><br>&emsp;&emsp;1.导入的模型一般来讲是一堆线，这时候点击ADAMS右下角的黄色圆球即可。<br>&emsp;&emsp;2.导入的模型一般不在ADAMS的十字中心，对于强迫症患者可能看着遭罪，可以通过<br>&emsp;&emsp;3.<br>&emsp;&emsp;4.<br>&emsp;&emsp;5.<br>&emsp;&emsp;6.<br>&emsp;&emsp;7.<br>&emsp;&emsp;8.<br>&emsp;&emsp;9.  </p>
+    <div class="post-body" itemprop="articleBody"><h1 id="一点小小的ADAMS吐槽"><a href="#一点小小的ADAMS吐槽" class="headerlink" title="一点小小的ADAMS吐槽"></a>一点小小的ADAMS吐槽</h1><p>&emsp;&emsp;作为一个机械专业的本科生，ADAMS应该是学习机械原理和机械设计分析机构运动的绕不开的一个软件。本人在大二做机械原理及机械设计大作业时侥幸没有分到这个任务，原来以为躲过了一劫，没想到最终还是遇到了。在此先声明，我确实认为这个软件的任务（即做运动学的仿真）完成地很好，但是不得不吐槽一下，作为一个运动仿真的软件，你没有很强大的建模能力我是可以理解的，但是你还没有和其他建模软件相互友好的沟通能力，我只能评价为抽象。</p>
+<h1 id="从SOLIDWORKS导入文件到ADAMS"><a href="#从SOLIDWORKS导入文件到ADAMS" class="headerlink" title="从SOLIDWORKS导入文件到ADAMS"></a>从SOLIDWORKS导入文件到ADAMS</h1><p>&emsp;<strong>从Solidworks导入文件到Adams有两种方式，两种方式各有利弊，在应用上可以互相参考</strong><br>&emsp;&emsp;方式一，将Solidworks的建模文件另存为Parasolid(*.x_t; *.x_b）文件。打开Adams选择新建模型，记住Adams仿真的模型名称，之后选择文件——导入；选择文件类型为Parasolid文件；双击读取文件，选择生成的Parasolid文件，之后输入模型名称为Adams仿真的模型名称；就可以导入一个不添加任何约束的模型。<br>&emsp;&emsp;方式二，在Solidworks中运动算例中，将分析方式选择为motion，如果没有Motion分析则需要在菜单栏中选择SOLIDWORKS插件，选择SOLIDWORKS Motion，之后就会出现Motion分析选项，拖动装配体关键帧到任一位置，点击计算，之后右键运动算例中的装配体文件，选择输出到ADAMS，即可生成一个ADAMS模型（ *.adm）文件，之后在ADAMS中直接打开这个文件即可。此时ADAMS中将Solidworks中的配合转换为约束，但是转换效果一言难尽。<br>&emsp;&emsp;这两种方式都可以将Solidworks中的文件导入到ADAMS中，方式一如果你有足够的机械原理知识可以自己约束物体，要注意将模型中固定不动的部件和大地固连（建立固定副），这样的约束比较合理，符合实际。方式二比较偷懒，但是在没有机械原理基础时可以选择采用，只是会出现约束查找困难的问题，不利于后续操作。<br>&emsp; <strong>可能出现的一些问题</strong><br>&emsp;&emsp;1.导入的模型一般来讲是一堆线，这时候点击ADAMS右下角的黄色圆球即可。<br>&emsp;&emsp;2.导入的模型一般不在ADAMS的十字中心，对于强迫症患者可能看着遭罪，可以在对模型添加运动副和约束之后选择如下位置移动，将重心移动到中心即可。<br><img src="/.cn//ADAMS%E4%BD%8D%E7%BD%AE%E8%AE%BE%E7%BD%AE.png" alt="ADAMS位置设置"></p>
+<p>&emsp;&emsp;3.<br>&emsp;&emsp;4.<br>&emsp;&emsp;5.<br>&emsp;&emsp;6.<br>&emsp;&emsp;7.<br>&emsp;&emsp;8.<br>&emsp;&emsp;9.  </p>
 
     </div>
 
